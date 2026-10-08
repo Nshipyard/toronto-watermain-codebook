@@ -61,7 +61,7 @@ export default function Showcase() {
               {wards.map((w) => (
                 <div key={w.ward}>
                   <div className="flex items-baseline justify-between gap-3 text-[14px]">
-                    <span className="font-medium">
+                    <span className="min-w-0 font-medium">
                       {w.ward} · {w.name}
                     </span>
                     <span className="shrink-0 tabular-nums text-ink/60">
@@ -107,7 +107,7 @@ export default function Showcase() {
             {leadMats.map((m) => (
               <div key={m.code} className="flex items-center gap-4">
                 <code className="w-16 shrink-0 font-mono text-[14px] font-semibold">{m.code}</code>
-                <div className="h-2.5 flex-1 overflow-hidden rounded-full bg-line/60">
+                <div className="h-2.5 min-w-0 flex-1 overflow-hidden rounded-full bg-line/60">
                   <div className="h-full rounded-full bg-ink" style={{ width: `${(m.count / maxMat) * 100}%` }} />
                 </div>
                 <span className="w-28 shrink-0 text-right text-[14px] tabular-nums text-ink/60">
