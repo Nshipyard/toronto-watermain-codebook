@@ -1,0 +1,62 @@
+code_type,code,meaning,count,pct,notes
+material,CI,Cast Iron,25359,51.32,"Grey cast iron, the oldest common watermain material in Toronto; dominant from the 1870s through the 1960s. Brittle relative to ductile iron, which is why break rates rise with age."
+material,PVC,Polyvinyl Chloride,12994,26.3,"Rigid plastic pipe; light, corrosion-proof, and the most common modern material for small-diameter distribution mains from the 1970s on."
+material,DIP,Ductile Iron Pipe,4440,8.99,Ductile (nodular) cast iron; stronger and more flexible than grey cast iron. Became the standard iron pipe from the 1960s on.
+material,SP,Steel Pipe,1727,3.49,"Welded steel pipe, dominant material for large-diameter transmission mains."
+material,DICL,"Ductile Iron, Cement Lined",1485,3.01,Ductile iron pipe with a cement-mortar lining that protects against internal corrosion.
+material,CICL,"Cast Iron, Cement Lined",975,1.97,Grey cast iron pipe with a cement-mortar lining.
+material,UNK,Unknown,830,1.68,Material not recorded in the source system. 830 segments carry no material information.
+material,AC,Asbestos Cement,631,1.28,"Cement pipe reinforced with asbestos fiber, widely installed mid-20th century. The fibers are bound in the cement matrix; handling concern is mainly dust during cutting or repair, not the delivered water."
+material,CPP,Concrete Pressure Pipe,283,0.57,"Steel-cylinder concrete pipe for pressure service, used on larger diameters."
+material,PVCO,Oriented PVC,193,0.39,Molecularly oriented PVC; a higher-strength variant of PVC pipe.
+material,COP,Copper,185,0.37,"Copper pipe; appears on small-diameter segments, typically service-sized connections rather than street mains."
+material,SPCL,"Steel Pipe, Cement Lined",134,0.27,Steel pipe with cement-mortar lining.
+material,PE,Polyethylene,62,0.13,Flexible plastic pipe.
+material,HDPE,High-Density Polyethylene,59,0.12,"High-density polyethylene; flexible, fusion-joined plastic pipe."
+material,CONP,Concrete Pipe,24,0.05,Concrete pipe variant as coded by the source; distinct code from CONC in the data.
+material,None,No value,21,0.04,"Source field contains the literal string 'None'; treated as missing, not as a material."
+material,PCPP,Prestressed Concrete Cylinder Pipe,6,0.01,Concrete pressure pipe with prestressed steel wire wrapping; used on large transmission diameters.
+material,CONC,Concrete,6,0.01,"Concrete pipe, non-prestressed."
+type,0,Distribution,46923,94.96,Distribution watermain: the smaller street-level pipes that deliver water to properties. Every segment in the distribution file carries this code.
+type,1,Transmission (class 1),2063,4.17,Transmission watermain: large regional pipes moving water between facilities. The source codes function numerically but publishes no definitions; class 1 is the main transmission class in the file.
+type,2,Transmission (class 2),428,0.87,Second transmission class in the source coding; 428 segments. Meaning unpublished by the source.
+diameter_mm,150,Nominal diameter 150 mm (units inferred from standard pipe sizes; the source does not label units),26136,52.89,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,300,Nominal diameter 300 mm (units inferred from standard pipe sizes; the source does not label units),12008,24.3,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,200,Nominal diameter 200 mm (units inferred from standard pipe sizes; the source does not label units),5127,10.38,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,400,Nominal diameter 400 mm (units inferred from standard pipe sizes; the source does not label units),2102,4.25,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,250,Nominal diameter 250 mm (units inferred from standard pipe sizes; the source does not label units),658,1.33,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,600,Nominal diameter 600 mm (units inferred from standard pipe sizes; the source does not label units),634,1.28,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,900,Nominal diameter 900 mm (units inferred from standard pipe sizes; the source does not label units),483,0.98,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1200,Nominal diameter 1200 mm (units inferred from standard pipe sizes; the source does not label units),340,0.69,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,100,Nominal diameter 100 mm (units inferred from standard pipe sizes; the source does not label units),262,0.53,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,500,Nominal diameter 500 mm (units inferred from standard pipe sizes; the source does not label units),246,0.5,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,50,Nominal diameter 50 mm (units inferred from standard pipe sizes; the source does not label units),216,0.44,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,750,Nominal diameter 750 mm (units inferred from standard pipe sizes; the source does not label units),197,0.4,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1050,Nominal diameter 1050 mm (units inferred from standard pipe sizes; the source does not label units),194,0.39,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,350,Nominal diameter 350 mm (units inferred from standard pipe sizes; the source does not label units),150,0.3,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1500,Nominal diameter 1500 mm (units inferred from standard pipe sizes; the source does not label units),141,0.29,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1350,Nominal diameter 1350 mm (units inferred from standard pipe sizes; the source does not label units),127,0.26,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1800,Nominal diameter 1800 mm (units inferred from standard pipe sizes; the source does not label units),115,0.23,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,450,Nominal diameter 450 mm (units inferred from standard pipe sizes; the source does not label units),72,0.15,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1650,Nominal diameter 1650 mm (units inferred from standard pipe sizes; the source does not label units),44,0.09,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,2250,Nominal diameter 2250 mm (units inferred from standard pipe sizes; the source does not label units),34,0.07,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,2000,Nominal diameter 2000 mm (units inferred from standard pipe sizes; the source does not label units),22,0.04,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,2100,Nominal diameter 2100 mm (units inferred from standard pipe sizes; the source does not label units),21,0.04,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,75,Nominal diameter 75 mm (units inferred from standard pipe sizes; the source does not label units),6,0.01,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,2400,Nominal diameter 2400 mm (units inferred from standard pipe sizes; the source does not label units),5,0.01,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,560,Nominal diameter 560 mm (units inferred from standard pipe sizes; the source does not label units),3,0.01,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,25,Nominal diameter 25 mm (units inferred from standard pipe sizes; the source does not label units),2,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,3000,Nominal diameter 3000 mm (units inferred from standard pipe sizes; the source does not label units),2,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,2200,Nominal diameter 2200 mm (units inferred from standard pipe sizes; the source does not label units),2,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,175,Nominal diameter 175 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,180,Nominal diameter 180 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,38,Nominal diameter 38 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,19,Nominal diameter 19 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,406,Nominal diameter 406 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,335,Nominal diameter 335 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,800,Nominal diameter 800 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,3300,Nominal diameter 3300 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,4500,Nominal diameter 4500 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,3275,Nominal diameter 3275 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,1000,Nominal diameter 1000 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.
+diameter_mm,3050,Nominal diameter 3050 mm (units inferred from standard pipe sizes; the source does not label units),1,0.0,150 mm (6 in) is the standard residential distribution size; it carries over half of all segments.

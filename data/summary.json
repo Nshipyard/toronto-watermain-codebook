@@ -1,0 +1,549 @@
+{
+ "meta": {
+  "source": "City of Toronto Open Data, 'Watermains' package (distribution + transmission)",
+  "source_url": "https://open.toronto.ca/dataset/watermains/",
+  "retrieved": "2026-10-08",
+  "licence": "Open Government Licence - Toronto",
+  "segments": 49414,
+  "distribution_segments": 46923,
+  "transmission_segments": 2491,
+  "total_km": 6131.6,
+  "lead_cutoff_year": 1955,
+  "lead_cutoff_basis": "City of Toronto: lead water service pipes affect homes built before the mid-1950s (toronto.ca Lead & Drinking Water).",
+  "units_note": "Diameter units are not labeled by the source; millimetres inferred from standard pipe sizes.",
+  "type_note": "Watermain Type is coded numerically (0/1/2); the source publishes no definitions. Meanings above are inferred from file context."
+ },
+ "materials": [
+  {
+   "code": "CI",
+   "meaning": "Cast Iron",
+   "count": 25359,
+   "pct": 51.32
+  },
+  {
+   "code": "PVC",
+   "meaning": "Polyvinyl Chloride",
+   "count": 12994,
+   "pct": 26.3
+  },
+  {
+   "code": "DIP",
+   "meaning": "Ductile Iron Pipe",
+   "count": 4440,
+   "pct": 8.99
+  },
+  {
+   "code": "SP",
+   "meaning": "Steel Pipe",
+   "count": 1727,
+   "pct": 3.49
+  },
+  {
+   "code": "DICL",
+   "meaning": "Ductile Iron, Cement Lined",
+   "count": 1485,
+   "pct": 3.01
+  },
+  {
+   "code": "CICL",
+   "meaning": "Cast Iron, Cement Lined",
+   "count": 975,
+   "pct": 1.97
+  },
+  {
+   "code": "UNK",
+   "meaning": "Unknown",
+   "count": 830,
+   "pct": 1.68
+  },
+  {
+   "code": "AC",
+   "meaning": "Asbestos Cement",
+   "count": 631,
+   "pct": 1.28
+  },
+  {
+   "code": "CPP",
+   "meaning": "Concrete Pressure Pipe",
+   "count": 283,
+   "pct": 0.57
+  },
+  {
+   "code": "PVCO",
+   "meaning": "Oriented PVC",
+   "count": 193,
+   "pct": 0.39
+  },
+  {
+   "code": "COP",
+   "meaning": "Copper",
+   "count": 185,
+   "pct": 0.37
+  },
+  {
+   "code": "SPCL",
+   "meaning": "Steel Pipe, Cement Lined",
+   "count": 134,
+   "pct": 0.27
+  },
+  {
+   "code": "PE",
+   "meaning": "Polyethylene",
+   "count": 62,
+   "pct": 0.13
+  },
+  {
+   "code": "HDPE",
+   "meaning": "High-Density Polyethylene",
+   "count": 59,
+   "pct": 0.12
+  },
+  {
+   "code": "CONP",
+   "meaning": "Concrete Pipe",
+   "count": 24,
+   "pct": 0.05
+  },
+  {
+   "code": "None",
+   "meaning": "No value",
+   "count": 21,
+   "pct": 0.04
+  },
+  {
+   "code": "PCPP",
+   "meaning": "Prestressed Concrete Cylinder Pipe",
+   "count": 6,
+   "pct": 0.01
+  },
+  {
+   "code": "CONC",
+   "meaning": "Concrete",
+   "count": 6,
+   "pct": 0.01
+  }
+ ],
+ "diameters": [
+  {
+   "diameter_mm": "150",
+   "count": 26136,
+   "pct": 52.89
+  },
+  {
+   "diameter_mm": "300",
+   "count": 12008,
+   "pct": 24.3
+  },
+  {
+   "diameter_mm": "200",
+   "count": 5127,
+   "pct": 10.38
+  },
+  {
+   "diameter_mm": "400",
+   "count": 2102,
+   "pct": 4.25
+  },
+  {
+   "diameter_mm": "250",
+   "count": 658,
+   "pct": 1.33
+  },
+  {
+   "diameter_mm": "600",
+   "count": 634,
+   "pct": 1.28
+  },
+  {
+   "diameter_mm": "900",
+   "count": 483,
+   "pct": 0.98
+  },
+  {
+   "diameter_mm": "1200",
+   "count": 340,
+   "pct": 0.69
+  },
+  {
+   "diameter_mm": "100",
+   "count": 262,
+   "pct": 0.53
+  },
+  {
+   "diameter_mm": "500",
+   "count": 246,
+   "pct": 0.5
+  },
+  {
+   "diameter_mm": "50",
+   "count": 216,
+   "pct": 0.44
+  },
+  {
+   "diameter_mm": "750",
+   "count": 197,
+   "pct": 0.4
+  }
+ ],
+ "lead": {
+  "classes": {
+   "lead_coded": {
+    "segments": 0,
+    "km": 0.0,
+    "rule": "Material code explicitly indicating lead. No such code exists in this dataset, so this class is empty by construction."
+   },
+   "lead_era": {
+    "segments": 16949,
+    "km": 2014.9,
+    "rule": "Construction year before 1955. The City of Toronto states lead water service pipes affect homes built before the mid-1950s. This flag marks pipe vintages from that era, i.e. areas where lead service connections are more likely nearby. It is an age-based inference, not a measurement of lead in these pipes."
+   },
+   "modern": {
+    "segments": 31734,
+    "km": 4051.0,
+    "rule": "Construction year 1955 or later. Outside the City's lead-service era."
+   },
+   "unknown_vintage": {
+    "segments": 731,
+    "km": 65.7,
+    "rule": "No construction year recorded; cannot be classified by era."
+   }
+  },
+  "lead_era_materials": [
+   {
+    "code": "CI",
+    "count": 15528
+   },
+   {
+    "code": "CICL",
+    "count": 929
+   },
+   {
+    "code": "AC",
+    "count": 167
+   },
+   {
+    "code": "SP",
+    "count": 130
+   },
+   {
+    "code": "UNK",
+    "count": 99
+   },
+   {
+    "code": "DIP",
+    "count": 66
+   },
+   {
+    "code": "DICL",
+    "count": 9
+   },
+   {
+    "code": "CPP",
+    "count": 7
+   }
+  ],
+  "dist_lead_era_km": 1943.6,
+  "dist_km": 5586.4
+ },
+ "decades": [
+  {
+   "decade": 1870,
+   "segments": 752
+  },
+  {
+   "decade": 1880,
+   "segments": 1094
+  },
+  {
+   "decade": 1890,
+   "segments": 543
+  },
+  {
+   "decade": 1900,
+   "segments": 1133
+  },
+  {
+   "decade": 1910,
+   "segments": 3228
+  },
+  {
+   "decade": 1920,
+   "segments": 4367
+  },
+  {
+   "decade": 1930,
+   "segments": 1102
+  },
+  {
+   "decade": 1940,
+   "segments": 1573
+  },
+  {
+   "decade": 1950,
+   "segments": 8882
+  },
+  {
+   "decade": 1960,
+   "segments": 5762
+  },
+  {
+   "decade": 1970,
+   "segments": 3814
+  },
+  {
+   "decade": 1980,
+   "segments": 2732
+  },
+  {
+   "decade": 1990,
+   "segments": 1676
+  },
+  {
+   "decade": 2000,
+   "segments": 4494
+  },
+  {
+   "decade": 2010,
+   "segments": 5325
+  },
+  {
+   "decade": 2020,
+   "segments": 2206
+  }
+ ],
+ "wards": [
+  {
+   "ward": "03",
+   "name": "Etobicoke-Lakeshore",
+   "segments": 3385,
+   "km": 358.7,
+   "lead_era_km": 206.0,
+   "lead_era_pct": 57.4,
+   "median_year": 1953
+  },
+  {
+   "ward": "19",
+   "name": "Beaches-East York",
+   "segments": 1964,
+   "km": 206.3,
+   "lead_era_km": 164.7,
+   "lead_era_pct": 79.8,
+   "median_year": 1922
+  },
+  {
+   "ward": "14",
+   "name": "Toronto-Danforth",
+   "segments": 2065,
+   "km": 209.1,
+   "lead_era_km": 159.9,
+   "lead_era_pct": 76.5,
+   "median_year": 1922
+  },
+  {
+   "ward": "12",
+   "name": "Toronto-St. Paul's",
+   "segments": 1814,
+   "km": 188.0,
+   "lead_era_km": 158.3,
+   "lead_era_pct": 84.2,
+   "median_year": 1922
+  },
+  {
+   "ward": "09",
+   "name": "Davenport",
+   "segments": 1711,
+   "km": 168.6,
+   "lead_era_km": 130.4,
+   "lead_era_pct": 77.3,
+   "median_year": 1916
+  },
+  {
+   "ward": "04",
+   "name": "Parkdale-High Park",
+   "segments": 1862,
+   "km": 178.9,
+   "lead_era_km": 130.0,
+   "lead_era_pct": 72.7,
+   "median_year": 1922
+  },
+  {
+   "ward": "15",
+   "name": "Don Valley West",
+   "segments": 2155,
+   "km": 262.8,
+   "lead_era_km": 127.6,
+   "lead_era_pct": 48.5,
+   "median_year": 1956
+  },
+  {
+   "ward": "11",
+   "name": "University-Rosedale",
+   "segments": 1971,
+   "km": 182.6,
+   "lead_era_km": 126.2,
+   "lead_era_pct": 69.1,
+   "median_year": 1923
+  },
+  {
+   "ward": "20",
+   "name": "Scarborough Southwest",
+   "segments": 2096,
+   "km": 260.7,
+   "lead_era_km": 121.4,
+   "lead_era_pct": 46.6,
+   "median_year": 1957
+  },
+  {
+   "ward": "08",
+   "name": "Eglinton-Lawrence",
+   "segments": 2510,
+   "km": 269.7,
+   "lead_era_km": 113.7,
+   "lead_era_pct": 42.2,
+   "median_year": 1957
+  },
+  {
+   "ward": "05",
+   "name": "York South-Weston",
+   "segments": 2302,
+   "km": 245.6,
+   "lead_era_km": 100.6,
+   "lead_era_pct": 41.0,
+   "median_year": 1957
+  },
+  {
+   "ward": "02",
+   "name": "Etobicoke Centre",
+   "segments": 2738,
+   "km": 348.6,
+   "lead_era_km": 83.7,
+   "lead_era_pct": 24.0,
+   "median_year": 1960
+  },
+  {
+   "ward": "10",
+   "name": "Spadina-Fort York",
+   "segments": 1627,
+   "km": 131.8,
+   "lead_era_km": 69.3,
+   "lead_era_pct": 52.6,
+   "median_year": 1974
+  },
+  {
+   "ward": "06",
+   "name": "York Centre",
+   "segments": 1797,
+   "km": 240.9,
+   "lead_era_km": 54.6,
+   "lead_era_pct": 22.7,
+   "median_year": 1967
+  },
+  {
+   "ward": "13",
+   "name": "Toronto Centre",
+   "segments": 1418,
+   "km": 99.4,
+   "lead_era_km": 47.1,
+   "lead_era_pct": 47.4,
+   "median_year": 1997
+  },
+  {
+   "ward": "21",
+   "name": "Scarborough Centre",
+   "segments": 1518,
+   "km": 232.0,
+   "lead_era_km": 37.2,
+   "lead_era_pct": 16.0,
+   "median_year": 1957
+  },
+  {
+   "ward": "25",
+   "name": "Scarborough-Rouge Park",
+   "segments": 1962,
+   "km": 277.4,
+   "lead_era_km": 22.9,
+   "lead_era_pct": 8.3,
+   "median_year": 1985
+  },
+  {
+   "ward": "18",
+   "name": "Willowdale",
+   "segments": 1897,
+   "km": 224.8,
+   "lead_era_km": 21.2,
+   "lead_era_pct": 9.4,
+   "median_year": 1971
+  },
+  {
+   "ward": "16",
+   "name": "Don Valley East",
+   "segments": 1084,
+   "km": 156.6,
+   "lead_era_km": 19.4,
+   "lead_era_pct": 12.4,
+   "median_year": 1958
+  },
+  {
+   "ward": "01",
+   "name": "Etobicoke North",
+   "segments": 2241,
+   "km": 292.3,
+   "lead_era_km": 14.2,
+   "lead_era_pct": 4.9,
+   "median_year": 1973
+  },
+  {
+   "ward": "24",
+   "name": "Scarborough-Guildwood",
+   "segments": 1392,
+   "km": 201.4,
+   "lead_era_km": 11.7,
+   "lead_era_pct": 5.8,
+   "median_year": 1961
+  },
+  {
+   "ward": "07",
+   "name": "Humber River-Black Creek",
+   "segments": 1434,
+   "km": 215.0,
+   "lead_era_km": 8.7,
+   "lead_era_pct": 4.1,
+   "median_year": 1970
+  },
+  {
+   "ward": "22",
+   "name": "Scarborough-Agincourt",
+   "segments": 1251,
+   "km": 194.0,
+   "lead_era_km": 7.2,
+   "lead_era_pct": 3.7,
+   "median_year": 1972
+  },
+  {
+   "ward": "17",
+   "name": "Don Valley North",
+   "segments": 1335,
+   "km": 205.1,
+   "lead_era_km": 4.9,
+   "lead_era_pct": 2.4,
+   "median_year": 1969
+  },
+  {
+   "ward": "23",
+   "name": "Scarborough North",
+   "segments": 1381,
+   "km": 234.1,
+   "lead_era_km": 2.4,
+   "lead_era_pct": 1.0,
+   "median_year": 1978
+  }
+ ],
+ "limitations": [
+  "The dataset documents watermains (street pipes), not water service connections. Toronto's lead risk is about service pipes, so nothing here directly measures lead; the lead-era flag is an age-based geographic proxy.",
+  "No segment carries an explicit lead material code, so the 'lead (as coded)' class is empty.",
+  "731 segments (1.5%) have no construction year and cannot be era-classified.",
+  "13 distribution segments fall outside all 25 ward polygons by midpoint and are excluded from ward analysis.",
+  "Diameter units and Watermain Type meanings are inferred, not published by the source.",
+  "Corrosion control (phosphate added since 2014, per the City) reduces lead leaching but does not remove lead pipes; era is about pipe inventory, not current water quality."
+ ]
+}
