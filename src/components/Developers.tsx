@@ -1,6 +1,7 @@
 "use client";
 
 import { useLang } from "@/i18n";
+import McpConnect from "./McpConnect";
 
 const endpoints = [
   {
@@ -71,17 +72,21 @@ export default function Developers() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-5 md:grid-cols-2">
-          <a href="/api/openapi.json" target="_blank" rel="noreferrer" className="rounded-[24px] border border-white/15 bg-white/5 p-6 hover:border-white/40">
-            <h4 className="display text-[24px]">{t.developers.openapi}</h4>
-            <p className="mt-2 font-mono text-[13px] text-white/60">/api/openapi.json · OpenAPI 3.1</p>
+        <div className="mt-8">
+          <a href="/api/openapi.json" target="_blank" rel="noreferrer" className="block rounded-[24px] bg-white/[0.06] p-6 hover:bg-white/[0.09]">
+            <h4 className="text-[19px] font-semibold">{t.developers.openapi}</h4>
+            <code className="mt-2 block font-mono text-[13px] text-white/60">GET /api/openapi.json</code>
           </a>
-          <div className="rounded-[24px] border border-white/15 bg-white/5 p-6">
-            <h4 className="display text-[24px]">{t.developers.mcpTitle}</h4>
-            <p className="mt-2 text-[14px] leading-relaxed text-white/65">{t.developers.mcpBody}</p>
-            <p className="mt-2 font-mono text-[13px] text-white/60">POST /mcp · JSON-RPC 2.0</p>
-          </div>
         </div>
+
+        <McpConnect
+          config={{
+            slug: "toronto-watermain",
+            displayName: "Toronto Watermain Codebook",
+            exampleEn: "Look up material code CI and tell me its lead-era share",
+            exampleFr: "Cherche le code de matériau CI et donne-moi sa part datant de l'ère du plomb",
+          }}
+        />
       </div>
     </section>
   );
