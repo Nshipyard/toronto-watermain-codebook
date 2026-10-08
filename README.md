@@ -15,6 +15,12 @@ Key findings, computed from the source on 2026-10-08:
 - Toronto-St. Paul's has the highest lead-era share: 84.2% of its distribution network predates 1955. Etobicoke-Lakeshore carries the most lead-era pipe by length: 206.0 km.
 - No segment in the dataset carries an explicit lead material code. The lead-era flag is an age-based inference about pipe vintage, never a measurement of lead.
 
+## Screenshots
+
+![Hero](docs/screenshots/twc-desktop-hero.png)
+![Codebook explorer](docs/screenshots/twc-desktop-explorer-results.png)
+![Mobile](docs/screenshots/twc-mobile-hero.png)
+
 ## Data files
 
 | File | Contents |
