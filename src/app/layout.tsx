@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Toronto's 49,414 watermain segments decoded: 18 material codes in plain English, diameters, function codes, and a lead-era classification by ward. Searchable explorer, REST API, OpenAPI docs, and MCP tools. Open data, MIT licensed.",
     url: "https://watermains.canada.nshipyard.com",
     siteName: "Toronto Watermain Codebook",
-    images: [{ url: "/og-image.png", width: 1200, height: 750, alt: "Toronto Watermain Codebook — pipe codes decoded" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Toronto Watermain Codebook — pipe codes decoded" }],
     type: "website",
   },
   twitter: {
